@@ -1,0 +1,48 @@
+@use "../../styles/colors" as *;
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .navbar {
+    width: 100%;
+    background-color: $primary;
+    color: $textcolor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+
+    .logo {
+      h1 {
+        margin: 0;
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+    }
+
+    .navbar-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      a {
+        color: $textcolor;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $textcolor;
+        }
+      }
+    }
+  }
+}
+#auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
