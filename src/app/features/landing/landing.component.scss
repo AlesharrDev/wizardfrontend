@@ -161,7 +161,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      
+
       h3 {
         font-size: 2rem;
         margin: 0;
@@ -175,21 +175,114 @@
     }
   }
 }
-#footer{
-    padding: 2rem 0;
-    text-align: center;
-    background-color: $secondary;
-    color: $white;
-    .redes {
-        a {
-            color: $white;
-            text-decoration: none;
-            margin: 0 1rem;
-            transition: color 0.2s;
+#pasos {
+  background-color: rgba($secondary, 1);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 0.5rem;
+    color: white;
+    font-weight: bold;
+  }
 
-            &:hover {
-                color: darken($white, 10%);
-            }
-        }
+  .pasos-container {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    .paso {
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      padding: 1.5rem;
+      padding-top: 8%;
+      height: 300px;
+      width: 350px;
+      margin: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      h3 {
+        font-size: 2rem;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+      }
+      p {
+        font-size: 1.2rem;
+        color: white;
+      }
     }
+  }
+}
+
+#contacto {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 0.5rem;
+    color: $textcolor;
+    font-weight: normal;
+  }
+  .subtitulo {
+    width: 60%;
+    text-align: center;
+  }
+  form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+
+      &:focus {
+        outline: none;
+        border-color: $secondary;
+        box-shadow: 0 0 5px rgba($secondary, 0.5);
+      }
+    }
+
+    button {
+      align-self: flex-end;
+      @extend .btn-primary;
+    }
+  }
+}
+#footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: $secondary;
+  color: $white;
+  .redes {
+    a {
+      color: $white;
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: color 0.2s;
+
+      &:hover {
+        color: darken($white, 10%);
+      }
+    }
+  }
 }
